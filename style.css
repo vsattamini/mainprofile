@@ -1,0 +1,98 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    color: #f8e7f4;
+}
+
+body {
+    /*background-image: url(./pexels-cottonbro-3826436.jpg);
+    background-position: center center fixed;
+    background-repeat: no-repeat;*/
+    background:  url(./pexels-cottonbro-3826436.jpg) center center fixed no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #e958c9;
+}
+
+.logo {
+    font-size: 7vh;
+    margin-left: 10px;
+}
+
+header {
+    display: flex;
+    width: 100vw;
+    height: 10vh;
+    background-color: rgba(0, 0, 0, 0.742);
+    justify-content: space-between;
+}
+
+main {
+    height: 1fr;
+}
+
+ul {
+    align-items: right;
+    margin-right: 10px;
+}
+
+ul > li {
+    display: inline-block;
+}
+
+.social_link {
+    height: 7vh;
+    font-size: 7vh;
+    align-items: middle;
+}
+
+.container {
+    text-align: center;
+}
+
+.container .name h1 { 
+    font-size: min(max(30px,10vw), 60px)
+}
+
+.container .name h5 { 
+    font-size: min(max(15px,4vw), 20px)
+}
+
+#about p { 
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: min(max(12px,3vw), 20px)
+}
+
+.form {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.form input {
+    width: 30%;
+}
+
+.form button {
+    width: 10%;
+    color: black;
+    min-width: fit-content;
+}
+
+.id-contato {
+    font-size: max(12pt,2vw)
+}
