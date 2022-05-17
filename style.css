@@ -20,14 +20,6 @@ ul {
     list-style: none;
 }
 
-a {
-    text-decoration: none;
-}
-
-a:hover {
-    color: #e958c9;
-}
-
 .logo {
     font-size: 7vh;
     margin-left: 10px;
@@ -54,6 +46,14 @@ ul > li {
     display: inline-block;
 }
 
+i {
+    transition: 200ms;
+}
+
+i:hover {
+    color: #e8a3d9;
+}
+
 .social_link {
     height: 7vh;
     font-size: 7vh;
@@ -75,7 +75,7 @@ ul > li {
 #about p { 
     max-width: 600px;
     margin: 0 auto;
-    font-size: min(max(12px,3vw), 20px)
+    font-size: min(max(12px,2vw), 15px)
 }
 
 .form {
@@ -85,14 +85,28 @@ ul > li {
 
 .form input {
     width: 30%;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+    padding: 5px;
 }
 
 .form button {
     width: 10%;
     color: black;
     min-width: fit-content;
+    background-color: #f8e7f4;
+    transition: 200ms;
+    padding: 5px;
+    border: none;
+    border-radius: 0px 5px 5px 0px;
 }
 
 .id-contato {
-    font-size: max(12pt,2vw )
+    font-size: max(12pt,1vw )
+}
+
+button:hover {
+    background-color: #e8a3d9;
+    color: #f8e7f4;
+    cursor: pointer;
 }
