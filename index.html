@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Victor Sattamini</title>
     <meta name="description" content="Programador em transição de carreira">
-    <link rel="favicon" href="images/noun-labrador-42404162.png">
+    <link rel="icon" href="images/noun-labrador-42404162.png">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
@@ -39,25 +39,37 @@
                 <h5>transitioning developer</h5>
             </div>
             <div>
-                <div id="arrow">
-                    <i class="fa-solid fa-chevron-down"></i>
-                </div>
-            </div>
-            <div id="about">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum libero voluptas quasi illo consequatur accusamus a pariatur commodi temporibus molestias deserunt aut cum, eius voluptates! Deserunt ea nesciunt quos ipsam.
+                <p onclick="displayAbout()" id="arrow"> 
+                    <i id="animation" class="fa-solid fa-chevron-down"></i>
                 </p>
             </div>
+            <div>
+                <p id="about" style="display:none">
+                    administrador dando voltas para virar programador <br> portfolio em breve, links para contato acima <br> achando melhor, deixa seu email aqui que eu entro em contato!
+                </p>
+            </div>
+            <br>
             <div class="form">
                 <div>
-                    <p class="id-contato">deixe seu contato:</p>
+                    <p class="id-contato">bem aqui:</p>
                 </div>
                 <form action="">
-                    <input type="email" placeholder="seu melhor email">
+                    <input type="email" placeholder="seu email">
                     <button>enviar</button>
                 </form>
             </div>
         </section>
     </main>
+
+  
+        <script>
+        function displayAbout () {
+            var arrow = document.getElementById('animation')
+            arrow.classList.toggle('rotate')
+            var display = document.getElementById('about')
+            display.classList.toggle('active')
+        }
+    </script>
+   
 </body>
 </html>

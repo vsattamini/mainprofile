@@ -37,6 +37,28 @@ main {
     height: 1fr;
 }
 
+#arrow {
+    font-size:x-large;
+    animation: blink 5s steps(15, start) infinite;
+}
+
+
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+
+.rotate {
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+
+.active {
+    transition: 300ms;
+    display: block !important;
+}
+
 ul {
     align-items: right;
     margin-right: 10px;
@@ -52,6 +74,7 @@ i {
 
 i:hover {
     color: #e8a3d9;
+    cursor: pointer;
 }
 
 .social_link {
@@ -94,10 +117,11 @@ i:hover {
     width: 10%;
     color: black;
     min-width: fit-content;
-    background-color: #f8e7f4;
+    background-color: #fdd0f3;
     transition: 200ms;
     padding: 5px;
     border: none;
+    margin-left: -5px;
     border-radius: 0px 5px 5px 0px;
 }
 
@@ -106,7 +130,7 @@ i:hover {
 }
 
 button:hover {
-    background-color: #e8a3d9;
+    background-color: #e680d0;
     color: #f8e7f4;
     cursor: pointer;
 }
