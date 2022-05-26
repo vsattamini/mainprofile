@@ -37,6 +37,10 @@ main {
     height: 1fr;
 }
 
+h1 {
+    margin-top: 20px;
+}
+
 #arrow {
     font-size:x-large;
     animation: blink 5s steps(15, start) infinite;
@@ -107,7 +111,7 @@ i:hover {
 }
 
 .form input {
-    width: max(65px, 30%);
+    width: max(70px, 30%);
     border: none;
     border-radius: 5px 0px 0px 5px;
     padding: 5px;
@@ -133,4 +137,8 @@ button:hover {
     background-color: #e680d0;
     color: #f8e7f4;
     cursor: pointer;
+}
+
+.input_box {
+    color: #2e1128;
 }
